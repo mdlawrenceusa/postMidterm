@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160407165615) do
+ActiveRecord::Schema.define(version: 20160407171215) do
+
+  create_table "comments", force: true do |t|
+    t.string   "commenter"
+    t.text     "body"
+    t.integer  "movie_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "comments", ["movie_id"], name: "index_comments_on_movie_id"
 
   create_table "movies", force: true do |t|
     t.string   "title"
