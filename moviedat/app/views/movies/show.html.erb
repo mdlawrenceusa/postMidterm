@@ -1,0 +1,56 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @movie.url %>
+
+  <video width="320" height="240" controls>
+    <source src= <%= @movie.url %> type="video/mp4">
+
+      Your browser does not support the video tag.
+    </video>
+  </p>
+
+
+<p>
+  <strong>Title:</strong>
+  <%= @movie.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @movie.description %>
+</p>
+
+<p>
+  <strong>Cast:</strong>
+  <%= @movie.cast %>
+</p>
+
+<p>
+  <strong>Genre:</strong>
+  <%= @movie.genre %>
+</p>
+
+<p>
+  <strong>Length:</strong>
+  <%= @movie.length %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @movie.url %>
+</p>
+
+<p>
+  <strong>Poster url:</strong>
+  <%= @movie.poster_url %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @movie.year %>
+</p>
+
+<%= link_to 'Edit', edit_movie_path(@movie) %> |
+<%= link_to 'Back', movies_path %>
