@@ -1,4 +1,78 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<header class="hero"
+background: url('http://image.slidesharecdn.com/amazonscloudfrontwebinar-140129010516-phpapp02/95/aws-201-a-walk-through-the-aws-cloud-introduction-to-amazon-cloudfront-10-638.jpg?cb=1434518002') no-repeat center center
+>
 
-<%= link_to 'My Movies', controller: 'movies' %>
+  <h1>Time to watch old movies at the beach...</h1>
+</header>
+
+<%= link_to 'Old Movies', movies_path,  class: "button expand"%>
+
+<div class="row">
+  <div class="small-4 columns">
+
+    <div class="image-wrapper overlay-fade-in">
+
+      <img src="https://tourneau.scene7.com/is/image/tourneau/DEV9900004?hei=450&wid=300&fmt=png-alpha&resMode=bicub&op_sharpen=1" />
+
+      <div class="image-overlay-content">
+        <h2>.overlay-fade-in</h2>
+        <p class="price">$99.99</p>
+        <a href="#" class="button">Get it</a>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="small-4 columns">
+
+    <div class="image-wrapper overlay-slide-in-left">
+
+      <img src="https://tourneau.scene7.com/is/image/tourneau/ZEN0101011?hei=450&wid=300&fmt=png-alpha&resMode=bicub&op_sharpen=1" />
+
+      <div class="image-overlay-content">
+        <h2>.overlay-slide-in-left</h2>
+        <p class="price">$2319.99</p>
+        <a href="#" class="button">Buy Me</a>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="small-4 columns">
+
+    <div class="image-wrapper overlay-fade-in-new-background">
+
+      <img src="https://tourneau.scene7.com/is/image/tourneau/FRK0100001?hei=450&wid=300&fmt=png-alpha&resMode=bicub&op_sharpen=1" />
+
+      <div class="image-overlay-content">
+        <h2>.overlay-fade-in-new-background</h2>
+        <p class="price">$189,000</p>
+        <a href="#" class="button">Want!</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+<footer class="footer">
+  <div class="row">
+    <div class="small-12 columns">
+      <p class="slogan">Finger-lickin' good</p>
+      <p class="links">
+        <a href="#">Home</a>
+        <a href="#">Blog</a>
+        <a href="#">Pricing</a>
+        <a href="#">About</a>
+        <a href="#">Faq</a>
+        <a href="#">Contact</a>
+      </p>
+      <p class="copywrite">Copywrite not copypwrite © 2015</p>
+    </div>
+  </div>
+</footer>
